@@ -1,0 +1,38 @@
+$main-font: 'Roboto', sans-serif;
+$special-font: 'Montserrat', sans-serif;
+$site-nav-bar-height: 60px;
+$title-font-size: 20px;
+$main-font-size: 16px;
+$sub-font-size: 15px;
+$mini-font-size: 14px;
+$ingredient-img-size: 50px;
+$border-radius: 16px;
+
+$text-color: #343535;
+
+body {
+  font: 100% $main-font;
+  font-size: $main-font-size;
+  //background-color: $main-bg-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.desktop-navigation-bar {
+  padding: 35px 50px;
+  //box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+
+  .nav-bar-links {
+    font: 100% $special-font;
+    font-weight: 700;
+    font-size: $title-font-size;
+
+    text-decoration: none;
+    color: $text-color;
+    //border: 1px solid $text-color;
+    padding: 10px;
+  }
+}
+
