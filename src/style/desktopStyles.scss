@@ -9,20 +9,40 @@ $ingredient-img-size: 50px;
 $border-radius: 16px;
 
 $text-color: #343535;
+$white-font: white;
+$blue-font: rgba(48,63,128);
+$left-color: rgba(250,171,171);
+$right-color: rgba(215, 131, 127);
 
 body {
   font: 100% $main-font;
   font-size: $main-font-size;
-  //background-color: $main-bg-color;
   color: $text-color;
   margin: 0;
   padding: 0;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+.page-container {
+  padding: 50px;
+  display: flex;
+
+  .left-hand-page {
+    width: 50vw;
+    height: 100vh;
+    background-color: $left-color;
+  }
+
+  .right-hand-page {
+    width: 50vw;
+    height: 100vh;
+    background-color: $right-color;
+  }
+}
+
 .desktop-navigation-bar {
   padding: 35px 50px;
-  //box-shadow: 0 1px 4px rgb(0 0 0 / 10%);
+  z-index: 99;
 
   .nav-bar-links {
     font: 100% $special-font;
@@ -30,9 +50,108 @@ body {
     font-size: $title-font-size;
 
     text-decoration: none;
-    color: $text-color;
-    //border: 1px solid $text-color;
     padding: 10px;
   }
 }
 
+.project-page {
+  background-color: $left-color;
+}
+
+.half-page-component {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 200px;
+  width: 25vw;
+}
+
+.large-text-button {
+  font: 100% $special-font;
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.large-text-button-link {
+  text-decoration: none;
+}
+
+.styled-link {
+  font: 100% $special-font;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.linkedin-link {
+  padding: 10px 10px 10px 0;
+}
+
+.insta-link {
+  padding: 10px;
+}
+
+.montserrat-700 {
+  font: 100% $special-font;
+  font-weight: 700;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.link {
+  color: $white-font;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue-font;
+  }
+}
+
+.display-flex {
+  display: flex;
+}
+
+.fade-popup {
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.left-side-padding {
+  padding-top: 100px;
+}

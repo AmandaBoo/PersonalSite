@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/styles.scss';
-import {MainPage} from "./MainPage/MainPage";
+import {PageContainer} from "./MainPage/PageContainer";
 
-ReactDOM.render(<MainPage/>, document.getElementById("root"));
+ReactDOM.render(<PageContainer/>, document.getElementById("root"));
