@@ -1,59 +1,51 @@
 import React, {useState} from 'react';
-import {Navigation} from "../Navigation/Navigation";
-import {AboutComponent} from "./AboutComponent";
-import {ProjectComponent} from "./ProjectComponent";
 
 export const HomePage = ({}) => {
-    const [popupName, setPopupName] = useState(null);
     return (
         <>
-            <div className={'left-hand-page'}>
-                {renderTopNavigation()}
-                {renderAboutSection(setPopupName)}
-            </div>
-            <div className={'right-hand-page'}>
-                {renderRightRoutes()}
-            </div>
-            {renderAboutPopup(popupName === 'ABOUT')}
+            {renderLandingSection()}
         </>
     );
 }
 
-function renderTopNavigation() {
+function renderLandingSection() {
     return (
-        <div>
-            <Navigation/>
+        <div className={'landing-container flex-center'}>
+            <div>
+                <div className={'large-text name-container'}>
+                    AMANDA BUI
+                </div>
+                <div className={'flex-center small-text'}>
+                    <span className={'link-spacing'}>PROJECTS</span>
+                    {createImageLink('image-icon', './images/instagram.png', 'Instagram',
+                        'https://www.instagram.com/amanda_boo__/')}
+                    {createImageLink('image-icon', './images/linkedin.png', 'LinkedIn',
+                        'https://www.linkedin.com/in/amanda-b-077b26160/')}
+                    <span className={'link-spacing'}>ABOUT</span>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
-function renderAboutSection(setPopupName) {
-    // TODO : IF CLICKED RUN ANIMATION TO FADE AWAY EVERYTHING
-    // RUN ANIMATION TO HAVE X APPEAR
-    // RUN ANIMATION TO HAVE POPUP APPEAR
+function createImageLink(classNames, imgSrc, alt, url) {
     return (
-        <div className={'flex-center'}>
-            <AboutComponent
-                isClicked={() => {
-                    setPopupName('ABOUT')
-                }}
+        <a href={url} target="_blank">
+            <img
+                src={imgSrc}
+                alt={alt}
+                className={classNames}
             />
-        </div>
+        </a>
     );
 }
 
-function renderRightRoutes() {
+function createLink(classNames, url, title, displayName) {
     return (
-        <div className={'flex-center'}>
-            <ProjectComponent/>
-        </div>
+        <a className={classNames}
+           href={url}
+           title={title}
+           target="_blank"
+        >{displayName}</a>
     );
-}
-
-function renderAboutPopup(doRender) {
-    if (doRender) {
-        return (
-            <div className={'fade-popup'}> HELLO </div>
-        );
-    }
 }

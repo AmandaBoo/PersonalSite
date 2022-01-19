@@ -1,5 +1,6 @@
 $main-font: 'Roboto', sans-serif;
 $special-font: 'Montserrat', sans-serif;
+$alegreya: 'Alegreya Sans', sans-serif;
 $site-nav-bar-height: 60px;
 $title-font-size: 20px;
 $main-font-size: 16px;
@@ -24,46 +25,53 @@ body {
 }
 
 .page-container {
-  padding: 50px;
-  display: flex;
+  max-height: 100vh;
+  padding: 80px;
 
-  .left-hand-page {
-    width: 50vw;
+  .landing-container {
+    width: 100%;
     height: 100vh;
     background-color: $left-color;
+    text-align: center;
   }
 
-  .right-hand-page {
-    width: 50vw;
+  .project-container {
+    width: 100%;
     height: 100vh;
     background-color: $right-color;
   }
 }
 
-.desktop-navigation-bar {
-  padding: 35px 50px;
-  z-index: 99;
-
-  .nav-bar-links {
-    font: 100% $special-font;
-    font-weight: 700;
-    font-size: $title-font-size;
-
-    text-decoration: none;
-    padding: 10px;
-  }
-}
-
-.project-page {
-  background-color: $left-color;
-}
-
-.half-page-component {
-  display: flex;
-  flex-direction: column;
+.large-text {
   color: white;
-  padding-top: 200px;
-  width: 25vw;
+  font: 100% $alegreya;
+  font-size: 80px;
+}
+
+.mid-text {
+  color: white;
+  font: 100% $alegreya;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.small-text {
+  color: white;
+  font: 100% $alegreya;
+  font-size: 30px;
+}
+
+.screenshot {
+  width: 1135px;
+  height: 562px;
+}
+
+.image-icon {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50px;
+  height: 50px;
 }
 
 .large-text-button {
@@ -71,30 +79,6 @@ body {
   font-size: 50px;
   font-weight: 500;
   margin-bottom: 20px;
-}
-
-.large-text-button-link {
-  text-decoration: none;
-}
-
-.styled-link {
-  font: 100% $special-font;
-  font-weight: 500;
-  color: white;
-  text-decoration: none;
-}
-
-.linkedin-link {
-  padding: 10px 10px 10px 0;
-}
-
-.insta-link {
-  padding: 10px;
-}
-
-.montserrat-700 {
-  font: 100% $special-font;
-  font-weight: 700;
 }
 
 .flex-center {
@@ -109,11 +93,18 @@ body {
 }
 
 .link {
+  font: 100% $special-font;
+  text-decoration: none;
+  font-weight: 500;
   color: $white-font;
   cursor: pointer;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 5px;
 
   &:hover {
     color: $blue-font;
+    border: 2px solid $blue-font
   }
 }
 
@@ -152,6 +143,18 @@ body {
   100% {opacity:1;}
 }
 
-.left-side-padding {
-  padding-top: 100px;
+.text-align-center {
+  text-align: center;
+}
+
+.padding-bottom {
+  padding-bottom: 30px;
+}
+
+.link-spacing {
+  padding: 20px;
+}
+
+.name-container {
+  padding: 50px;
 }
