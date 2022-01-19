@@ -4,16 +4,25 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-export const NavComponent = ({}) => {
+export const NavComponent = ({onLinkSelect}) => {
     return (
         <>
-            <div className={'large-text name-container'}>
+            <div
+                className={'large-text name-container'}
+                onClick={() => onLinkSelect('AMANDA')}
+            >
                 AMANDA BUI
             </div>
             <div className={'flex-center small-text nav-bar'}>
-                <span className={'link-spacing'}>PROJECTS</span>
+                <span
+                    className={'link-spacing internal-link'}
+                    onClick={() => onLinkSelect('PROJECTS')}
+                >PROJECTS</span>
                 {renderSvgLinks()}
-                <span className={'link-spacing'}>ABOUT</span>
+                <span
+                    className={'link-spacing internal-link'}
+                    onClick={() => onLinkSelect('ABOUT')}
+                >ABOUT</span>
             </div>
         </>
     );

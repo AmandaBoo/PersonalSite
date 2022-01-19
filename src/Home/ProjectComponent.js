@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 export const ProjectComponent = ({}) => {
 
     return (
-        <div className={'vertical-center content-container'}>
+        <div className={'vertical-center content-container fade-popup'}>
             <div className={'mid-text link-spacing'}>GENSHIN COOKBOOK</div>
             {createLinkContainer()}
             {createProjectGIFContainer()}

@@ -1,19 +1,45 @@
 import React, {useState} from 'react';
 import {ProjectComponent} from "./ProjectComponent";
 import {NavComponent} from "./NavComponent";
+import {AboutComponent} from "./AboutComponent";
 
 export const HomePage = ({}) => {
-    const [selectedLink, setSelectedLink] = useState(null);
+    const [selectedLink, setSelectedLink] = useState('AMANDA');
+
     return (
         <div className={'landing-container'}>
             <div>
-                <NavComponent/>
-                <ProjectComponent/>
+                <NavComponent
+                    onLinkSelect={(linkId) => setSelectedLink(linkId)}
+                />
+                {renderComponentWithSelectedLink(selectedLink)}
             </div>
         </div>
     );
 }
 
+function renderComponentWithSelectedLink(linkId) {
+    if (linkId === 'AMANDA') {
+        return (
+            <div className={'flex-center'}>
+                <img
+                    className={'home-page-img'}
+                    alt={'lavender'}
+                    src={'./images/lavender.png'}
+                />
+                <img
+                    className={'home-page-img'}
+                    alt={'frogs-mushroom'}
+                    src={'./images/frogs.png'}
+                />
+            </div>
+        )
+    } else if (linkId === 'PROJECTS') {
+        return <ProjectComponent/>;
+    } else if (linkId === 'ABOUT') {
+        return <AboutComponent/>
+    }
+}
 
 function aklsjdf() {
     return (
