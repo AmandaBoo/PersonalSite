@@ -1,6 +1,5 @@
 $main-font: 'Roboto', sans-serif;
-$special-font: 'Montserrat', sans-serif;
-$alegreya: 'Alegreya Sans', sans-serif;
+$play-fair: 'Playfair Display', serif;
 $site-nav-bar-height: 60px;
 $title-font-size: 20px;
 $main-font-size: 16px;
@@ -10,10 +9,13 @@ $ingredient-img-size: 50px;
 $border-radius: 16px;
 
 $text-color: #343535;
-$white-font: white;
+$white: white;
 $blue-font: rgba(48,63,128);
 $left-color: rgba(250,171,171);
-$right-color: rgba(215, 131, 127);
+$right-color: #f99797;
+$pink: #ffe7e3;
+$red: #fe5d40;
+$hover-color: rgba(215, 131, 127);
 
 body {
   font: 100% $main-font;
@@ -25,7 +27,7 @@ body {
 }
 
 .page-container {
-  max-height: 100vh;
+  height: 100vh;
   padding: 80px;
 
   .landing-container {
@@ -43,22 +45,28 @@ body {
 }
 
 .large-text {
-  color: white;
-  font: 100% $alegreya;
-  font-size: 80px;
+  color: $white;
+  font: 100% $play-fair;
+  font-size: 100px;
 }
 
 .mid-text {
-  color: white;
-  font: 100% $alegreya;
+  color: $white;
+  font: 100% $play-fair;
   font-weight: 700;
   font-size: 50px;
 }
 
 .small-text {
-  color: white;
-  font: 100% $alegreya;
+  color: $white;
+  font: 100% $main-font;
   font-size: 30px;
+}
+
+.body-text {
+  color: $white;
+  font: 100% $main-font;
+  font-size: 20px;
 }
 
 .screenshot {
@@ -74,13 +82,6 @@ body {
   height: 50px;
 }
 
-.large-text-button {
-  font: 100% $special-font;
-  font-size: 50px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -93,18 +94,21 @@ body {
 }
 
 .link {
-  font: 100% $special-font;
+  font: 100% $main-font;
   text-decoration: none;
   font-weight: 500;
-  color: $white-font;
+  color: $hover-color;
   cursor: pointer;
   font-size: 20px;
-  border: 2px solid white;
-  padding: 5px;
+  background-color: $pink;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px;
+  width: 150px;
 
   &:hover {
-    color: $blue-font;
-    border: 2px solid $blue-font
+    color: $white;
+    background-color: $hover-color;
   }
 }
 
@@ -157,4 +161,33 @@ body {
 
 .name-container {
   padding: 50px;
+}
+
+.content-container {
+  background-color: $right-color;
+}
+
+.carousel {
+  width: 50%;
+}
+
+.text-body {
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+.divider {
+  border-bottom: 3px solid $white;
+}
+
+.nav-bar {
+  padding-bottom: 80px;
+}
+
+.svg-icon {
+  color: $pink;
+  cursor: pointer;
 }
