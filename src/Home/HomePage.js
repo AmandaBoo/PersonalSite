@@ -1,9 +1,5 @@
 import React, {useState} from 'react';
 import {ProjectComponent} from "./ProjectComponent";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import {SvgLinkIcon} from "./SvgLinkIcon";
 import {NavComponent} from "./NavComponent";
 
 export const HomePage = ({}) => {

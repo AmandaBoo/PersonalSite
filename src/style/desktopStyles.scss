@@ -173,6 +173,7 @@ body {
 
 .text-body {
   width: 50%;
+  margin: 20px;
 }
 
 .flex {
@@ -190,4 +191,18 @@ body {
 .svg-icon {
   color: $pink;
   cursor: pointer;
+}
+
+.project-content-spacing {
+  padding: 0 20px 20px 20px;
+}
+
+.project-text-header {
+  font: 100% $play-fair;
+  font-size: 30px;
+  color: $white;
+}
+
+.project-text-margin {
+  margin: 20px 30px 20px 30px;
 }

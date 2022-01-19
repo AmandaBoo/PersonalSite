@@ -7,8 +7,8 @@ export const ProjectComponent = ({}) => {
             <div className={'mid-text link-spacing'}>GENSHIN COOKBOOK</div>
             {createLinkContainer()}
             {createProjectGIFContainer()}
-            {/*{createStackOverviewContainer()}*/}
-
+            {createOverviewContainer()}
+            {createStackMyStoryContainer()}
         </div>
     );
 }
@@ -36,25 +36,30 @@ function createProjectGIFContainer() {
     );
 }
 
-function createStackOverviewContainer() {
+function createOverviewContainer() {
+    return (
+        <div className={'body-text'}>
+            <p className={'project-text-header divider project-text-margin'}>OVERVIEW</p>
+            <p className={'project-text-margin'}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    );
+}
+
+function createStackMyStoryContainer() {
     return (
         <div className={'flex'}>
-            <div className={'text-body body-text'}>
-                <p className={'small-text divider'}>STACK</p>
+            <div className={'text-body body-text project-text-margin'}>
+                <p className={'project-text-header divider'}>STACK</p>
                 <p>
-                    React JS ~ Sass ~ Cloudflare
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div className={'text-body body-text'}>
-                <p className={'small-text divider'}>MY STORY</p>
+            <div className={'text-body body-text project-text-margin'}>
+                <p className={'project-text-header divider'}>MY STORY</p>
                 <p>
-                    I began work on it after spending many weeks hand-tracking my recipes and their many ingredients, not to mention sub-ingredients...
-                </p>
-                <p>
-                    The project was originally going to be developed in plain JS and HTMl, but quickly realized that I needed to modularize many sections of the site, and thus turned to React.
-                </p>
-                <p>
-                    I credit my success in getting the project this far through the power of careful planning and documentation as you can see in my repository~
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
         </div>
