@@ -28,9 +28,10 @@ function renderMainLink() {
 
 function renderInternalLink(linkName, linkPath) {
     return (
-        <span className={'link-spacing internal-link'}>
-            <NavLink className={'nav-link'} to={linkPath}>{linkName}</NavLink>
-        </span>
+        <NavLink
+            className={({ isActive }) => (isActive ? 'selected-nav-link link-spacing nav-link' : 'nav-link link-spacing internal-link')}
+            to={linkPath} activeStyle={'selected-nav-link'}>{linkName}
+        </NavLink>
     )
 }
 

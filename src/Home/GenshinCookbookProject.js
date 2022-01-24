@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ProjectComponent = ({}) => {
+export const GenshinCookbookProject = ({}) => {
 
     return (
         <div className={'vertical-center content-container fade-popup'}>
@@ -40,7 +40,7 @@ function createOverviewContainer() {
     return (
         <div className={'body-text'}>
             <p className={'project-text-header divider project-text-margin'}>OVERVIEW</p>
-            <p className={'project-text-margin'}>
+            <p className={'project-text-margin project-text-spacing'}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
@@ -52,13 +52,13 @@ function createStackMyStoryContainer() {
         <div className={'flex'}>
             <div className={'text-body body-text project-text-margin'}>
                 <p className={'project-text-header divider'}>STACK</p>
-                <p>
+                <p className={'project-text-spacing'}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
             <div className={'text-body body-text project-text-margin'}>
                 <p className={'project-text-header divider'}>MY STORY</p>
-                <p>
+                <p className={'project-text-spacing'}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>

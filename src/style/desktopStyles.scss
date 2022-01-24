@@ -222,3 +222,32 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+.selected-nav-link {
+  cursor: default;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.project-link {
+  font: 100% $main-font;
+  text-decoration: none;
+  font-weight: 500;
+  color: $hover-color;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: $pink;
+  border-radius: 12px;
+  width: 150px;
+
+  padding: 20px;
+  margin: 20px;
+  &:hover {
+    color: $white;
+    background-color: $hover-color;
+  }
+}
+
+.project-text-spacing {
+  line-height: 1.6;
+}

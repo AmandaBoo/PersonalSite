@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import {ProjectComponent} from "./ProjectComponent";
+import {GenshinCookbookProject} from "./GenshinCookbookProject";
 import {NavComponent} from "./NavComponent";
 import {AboutComponent} from "./AboutComponent";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {LandingComponent} from "./LandingComponent";
+import {ProjectCardsContainer} from "./ProjectCardsContainer";
 
 export const HomePage = ({}) => {
     return (
@@ -16,8 +17,9 @@ export const HomePage = ({}) => {
                         {/* routes for each subpage*/}
                         <Routes>
                             <Route path={'/'} element={<LandingComponent/>}/>
-                            <Route path={'/projects'} element={<ProjectComponent/>}/>
+                            <Route path={'/projects'} element={<ProjectCardsContainer/>}/>
                             <Route path={'/about'} element={<AboutComponent/>}/>
+                            <Route path={'/genshincookbook'} element={<GenshinCookbookProject/>}/>
                         </Routes>
                     </Router>
                 </div>
