@@ -231,17 +231,19 @@ body {
 
 .project-link {
   font: 100% $main-font;
+  font-size: 20px;
   text-decoration: none;
   font-weight: 500;
+
   color: $hover-color;
   cursor: pointer;
-  font-size: 20px;
   background-color: $pink;
+
   border-radius: 12px;
-  width: 150px;
 
   padding: 20px;
   margin: 20px;
+
   &:hover {
     color: $white;
     background-color: $hover-color;
@@ -250,4 +252,18 @@ body {
 
 .project-text-spacing {
   line-height: 1.6;
+}
+
+.project-card {
+  text-align: center;
+  width: 25vw;
+  border: 2px solid $white;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.project-card-description {
+  line-height: 1.6;
+  color: $white;
+  font-size: 20px;
 }

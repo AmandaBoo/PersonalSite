@@ -7,6 +7,7 @@ export const ProjectCardsContainer = ({}) => {
             <ProjectCard
                 projectName={'GENSHIN COOKBOOK'}
                 projectLink={'/genshincookbook'}
+                projectDescription={"A webtool designed to assist in tracking the many recipes of Genshin Impact"}
             />
         </div>
     );
