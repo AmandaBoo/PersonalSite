@@ -3,32 +3,38 @@ import {SvgLinkIcon} from "./SvgLinkIcon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import {NavLink} from "react-router-dom";
 
-export const NavComponent = ({onLinkSelect}) => {
+export const NavComponent = ({}) => {
     return (
         <>
-            <div
-                className={'large-text name-container'}
-                onClick={() => onLinkSelect('AMANDA')}
-            >
-                AMANDA BUI
-            </div>
+            {renderMainLink()}
             <div className={'flex-center small-text nav-bar'}>
-                <span
-                    className={'link-spacing internal-link'}
-                    onClick={() => onLinkSelect('PROJECTS')}
-                >PROJECTS</span>
-                {renderSvgLinks()}
-                <span
-                    className={'link-spacing internal-link'}
-                    onClick={() => onLinkSelect('ABOUT')}
-                >ABOUT</span>
+                {renderInternalLink('PROJECTS', '/projects')}
+                {renderExternalLinks()}
+                {renderInternalLink('ABOUT', '/about')}
             </div>
         </>
     );
 }
 
-function renderSvgLinks() {
+function renderMainLink() {
+    return (
+        <div className={'large-text name-container'}>
+            <NavLink className={'nav-link'} to={"/"}>AMANDA BUI</NavLink>
+        </div>
+    );
+}
+
+function renderInternalLink(linkName, linkPath) {
+    return (
+        <span className={'link-spacing internal-link'}>
+            <NavLink className={'nav-link'} to={linkPath}>{linkName}</NavLink>
+        </span>
+    )
+}
+
+function renderExternalLinks() {
     return (
         <>
             <SvgLinkIcon url={'https://github.com/AmandaBoo/'}>

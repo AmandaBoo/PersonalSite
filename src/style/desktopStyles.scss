@@ -26,7 +26,7 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-.page-container {
+.root-container {
   height: 100vh;
   padding: 80px;
 
@@ -216,4 +216,9 @@ body {
 .home-page-img {
   width: 25%;
   margin: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
 }
