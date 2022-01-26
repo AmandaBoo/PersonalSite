@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReadmeComponent} from "./ReadmeComponent";
+import {GenshinCookbookReadmeComponent} from "./GenshinCookbookReadmeComponent";
 
 export const GenshinCookbookProject = ({}) => {
 
@@ -69,7 +69,7 @@ function createStackContainer() {
                     {createLink('https://github.com/AmandaBoo/Project-Not-Boba#readme', 'readme', 'README')}
                 </div>
 
-                <ReadmeComponent/>
+                <GenshinCookbookReadmeComponent/>
             </div>
         </div>
     );

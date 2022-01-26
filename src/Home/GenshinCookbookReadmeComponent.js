@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ReadmeComponent = ({}) => {
+export const GenshinCookbookReadmeComponent = ({}) => {
     return (
         <>
             <div className={'flex'}>
@@ -12,19 +12,19 @@ export const ReadmeComponent = ({}) => {
     );
 };
 
-function createHeader3(headerTitle) {
-    return <h3 className={'header'}>{headerTitle}</h3>;
+function createHeader2(headerTitle) {
+    return <h2 className={'header'}>{headerTitle}</h2>;
 }
 
-function createHeader4(headerTitle) {
-    return  <h4>{headerTitle}</h4>
+function createHeader3(headerTitle) {
+    return  <h3>{headerTitle}</h3>
 }
 
 function createTechnologyContent() {
     return (
         <div className={'half-container'}>
         <>
-            {createHeader3('Technology')}
+            {createHeader2('Technology')}
             <p className={'project-text-line-height'}>
                 The site is written using Sass, and Javascript through the React framework.
             </p>
@@ -37,7 +37,7 @@ function createHostingContent() {
     return (
         <div className={'half-container'}>
         <>
-            {createHeader3('Hosting')}
+            {createHeader2('Hosting')}
             <p className={'project-text-line-height'}>
                 The site is being served through Cloudflare as a Cloudflare page
             </p>
@@ -49,8 +49,8 @@ function createHostingContent() {
 function createDataAnalyticsContent() {
     return (
         <>
-            {createHeader3('Data Storage and Analytics')}
-            {createHeader4('Local Storage')}
+            {createHeader2('Data Storage and Analytics')}
+            {createHeader3('Local Storage')}
             <p>
                 The core functionality of the site is not reliant on cookies,
                 but instead, on local storage. Upon hitting the site for the first time, a user's local
@@ -64,7 +64,7 @@ function createDataAnalyticsContent() {
                 missing information to their local storage values.
             </p>
 
-            {createHeader4('Server Storage')}
+            {createHeader3('Server Storage')}
             <p>
                 Luckily, the majority of the site's data can be kept server-side
                 (exm. images of recipes and ingredients, details on how each recipe is made, etc)
@@ -75,7 +75,7 @@ function createDataAnalyticsContent() {
                 cooking and crafting flows.
             </p>
 
-            {createHeader4('Analytics')}
+            {createHeader3('Analytics')}
             <p>
                 Cookies are only used for the purposes of viewing basic user information through Google Analytics
             </p>
