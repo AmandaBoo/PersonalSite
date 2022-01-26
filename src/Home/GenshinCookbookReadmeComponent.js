@@ -3,10 +3,7 @@ import React from 'react'
 export const GenshinCookbookReadmeComponent = ({}) => {
     return (
         <>
-            <div className={'flex'}>
-                {createTechnologyContent()}
-                {createHostingContent()}
-            </div>
+            {createTechnologyContent()}
             {createDataAnalyticsContent()}
         </>
     );
@@ -22,27 +19,13 @@ function createHeader3(headerTitle) {
 
 function createTechnologyContent() {
     return (
-        <div className={'half-container'}>
         <>
-            {createHeader2('Technology')}
+            {createHeader2('Technology and Hosting')}
             <p className={'project-text-line-height'}>
-                The site is written using Sass, and Javascript through the React framework.
+                The site is written using Sass, and Javascript through the React framework, and served
+                through Cloudflare.
             </p>
         </>
-        </div>
-    );
-}
-
-function createHostingContent() {
-    return (
-        <div className={'half-container'}>
-        <>
-            {createHeader2('Hosting')}
-            <p className={'project-text-line-height'}>
-                The site is being served through Cloudflare as a Cloudflare page
-            </p>
-        </>
-        </div>
     );
 }
 
