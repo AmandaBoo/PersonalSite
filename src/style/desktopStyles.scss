@@ -66,7 +66,7 @@ body {
 .body-text {
   color: $white;
   font: 100% $main-font;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .screenshot {
@@ -168,7 +168,7 @@ body {
   width: 50%;
 }
 
-.text-body {
+.half-container {
   width: 50%;
   margin: 20px;
 }
@@ -250,7 +250,7 @@ body {
   }
 }
 
-.project-text-spacing {
+.project-text-line-height {
   line-height: 1.6;
 }
 
@@ -266,4 +266,17 @@ body {
   line-height: 1.6;
   color: $white;
   font-size: 20px;
+}
+
+.header {
+  border-bottom: 2px solid white;
+  font-weight: normal;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.ul-line-height {
+  line-height: 2.6;
 }

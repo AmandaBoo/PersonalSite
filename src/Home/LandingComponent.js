@@ -3,7 +3,7 @@ import React from 'react';
 export const LandingComponent = ({}) => {
 
     return (
-        <div className={'flex-center'}>
+        <div className={'flex-center fade-popup'}>
             <img
                 className={'home-page-img'}
                 alt={'lavender'}

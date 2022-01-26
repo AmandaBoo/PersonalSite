@@ -1,4 +1,5 @@
 import React from 'react';
+import {ReadmeComponent} from "./ReadmeComponent";
 
 export const GenshinCookbookProject = ({}) => {
 
@@ -8,7 +9,8 @@ export const GenshinCookbookProject = ({}) => {
             {createLinkContainer()}
             {createProjectGIFContainer()}
             {createOverviewContainer()}
-            {createStackMyStoryContainer()}
+            {createMyStoryContainer()}
+            {createStackContainer()}
         </div>
     );
 }
@@ -16,9 +18,9 @@ export const GenshinCookbookProject = ({}) => {
 function createLinkContainer() {
     return (
         <div className={'flex-center'}>
-            {createLink('link', 'https://genshin-cookbook.com/',
+            {createLink('https://genshin-cookbook.com/',
                 'Genshin Cookbook', 'WEBSITE')}
-            {createLink('link', 'https://github.com/AmandaBoo/Project-Not-Boba',
+            {createLink( 'https://github.com/AmandaBoo/Project-Not-Boba',
                 'GC Repo', 'REPO')}
         </div>
     );
@@ -40,35 +42,67 @@ function createOverviewContainer() {
     return (
         <div className={'body-text'}>
             <p className={'project-text-header divider project-text-margin'}>OVERVIEW</p>
-            <p className={'project-text-margin project-text-spacing'}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    );
-}
-
-function createStackMyStoryContainer() {
-    return (
-        <div className={'flex'}>
-            <div className={'text-body body-text project-text-margin'}>
-                <p className={'project-text-header divider'}>STACK</p>
-                <p className={'project-text-spacing'}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div className={'project-text-line-height project-text-margin'}>
+                <p>
+                    Genshin Cookbook is a webtool designed to help assist in tracking the 100+ recipes of Genshin Impact!
                 </p>
-            </div>
-            <div className={'text-body body-text project-text-margin'}>
-                <p className={'project-text-header divider'}>MY STORY</p>
-                <p className={'project-text-spacing'}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p>
+                    The site currently supports the in-game Cooking system, however I'm actively working on
+                    supporting the Alchemy and Smithing systems
+                    with plans to support the Furniture system shortly afterwards!
                 </p>
             </div>
         </div>
     );
 }
 
-function createLink(classNames, url, title, displayName) {
+function createStackContainer() {
     return (
-        <a className={classNames}
+        <div className={'body-text'}>
+            <p className={'project-text-header divider project-text-margin'}>STACK</p>
+            <div className={'project-text-line-height project-text-margin'}>
+                <p>
+                    A brief description of the technical details of the site can be found below and a more thorough explanation can be found
+                    at the repo's
+                </p>
+                <div>
+                    {createLink('https://github.com/AmandaBoo/Project-Not-Boba#readme', 'readme', 'README')}
+                </div>
+
+                <ReadmeComponent/>
+            </div>
+        </div>
+    );
+}
+
+function createMyStoryContainer() {
+    return (
+        <div className={'body-text'}>
+            <p className={'project-text-header divider project-text-margin'}>MY STORY</p>
+            <div className={'project-text-line-height project-text-margin'}>
+                <p>
+                    When I picked up Genshin Impact back in 2021, I never thought the parts of the game that would hook me the most would
+                    be the Cooking and Crafting systems. With almost a 100 (and counting) recipes, I found myself quickly struggling to keep
+                    track of all of the ingredients required to perfect each dish...
+                </p>
+                <p>
+                    Soon I was spending an hour or more every few days updating my hand-written
+                    progress sheets and grocery lists. I gave digital spreadsheets a try but found that the amount
+                    of text I'd have to scan through unpleasant to stare at for hours.
+                    After thorough digging online, I discovered that while there were many digital planers to
+                    assist in tracking character progression, there were none for cooking or crafting.
+                </p>
+                <p>
+                    So I set about making my own~
+                </p>
+            </div>
+        </div>
+    );
+}
+
+function createLink(url, title, displayName) {
+    return (
+        <a className={'link'}
            href={url}
            title={title}
            target="_blank"
