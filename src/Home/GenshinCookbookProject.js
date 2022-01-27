@@ -4,13 +4,13 @@ import {GenshinCookbookReadmeComponent} from "./GenshinCookbookReadmeComponent";
 export const GenshinCookbookProject = ({}) => {
 
     return (
-        <div className={'vertical-center content-container fade-popup'}>
+        <div className={'content-container fade-popup'}>
             <div className={'mid-text link-spacing'}>GENSHIN COOKBOOK</div>
             {createLinkContainer()}
             {createProjectGIFContainer()}
-            {createOverviewContainer()}
-            {createMyStoryContainer()}
-            {createStackContainer()}
+                {createOverviewContainer()}
+                {createMyStoryContainer()}
+                {createStackContainer()}
         </div>
     );
 }
@@ -59,13 +59,13 @@ function createOverviewContainer() {
 function createStackContainer() {
     return (
         <div className={'body-text'}>
-            <p className={'project-text-header divider project-text-margin'}>STACK</p>
+            <p className={'project-text-header divider project-text-margin'}>TECHNICAL OVERVIEW</p>
             <div className={'project-text-line-height project-text-margin'}>
                 <p>
-                    A brief description of the technical details of the site can be found below and a more thorough explanation can be found
-                    at the repo's
+                    A brief description of the technical details of the site can be found below. A more thorough explanation can be found
+                    at the repo using the link below.
                 </p>
-                <div>
+                <div className={'text-align-center'}>
                     {createLink('https://github.com/AmandaBoo/Project-Not-Boba#readme', 'readme', 'README')}
                 </div>
 

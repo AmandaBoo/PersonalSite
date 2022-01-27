@@ -64,9 +64,13 @@ body {
 }
 
 .body-text {
+  max-width: 760px;
+  text-align: left;
   color: $white;
   font: 100% $main-font;
   font-size: 16px;
+  line-height: 1.5rem;
+  margin: 0px auto;
 }
 
 .screenshot {
@@ -162,6 +166,7 @@ body {
 
 .content-container {
   background-color: $right-color;
+  padding-bottom: 50px;
 }
 
 .carousel {
@@ -250,10 +255,6 @@ body {
   }
 }
 
-.project-text-line-height {
-  line-height: 1.6;
-}
-
 .project-card {
   text-align: center;
   width: 25vw;
@@ -270,7 +271,6 @@ body {
 
 .header {
   border-bottom: 2px solid white;
-  font-weight: normal;
 }
 
 .text-align-left {

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const GenshinCookbookReadmeComponent = ({}) => {
+export const    GenshinCookbookReadmeComponent = ({}) => {
     return (
         <>
             {createTechnologyContent()}
@@ -9,18 +9,14 @@ export const GenshinCookbookReadmeComponent = ({}) => {
     );
 };
 
-function createHeader2(headerTitle) {
-    return <h2 className={'header'}>{headerTitle}</h2>;
-}
-
 function createHeader3(headerTitle) {
-    return  <h3>{headerTitle}</h3>
+    return  <h3 className={'header'}>{headerTitle}</h3>
 }
 
 function createTechnologyContent() {
     return (
         <>
-            {createHeader2('Technology and Hosting')}
+            {createHeader3('Technology and Hosting')}
             <p className={'project-text-line-height'}>
                 The site is written using Sass, and Javascript through the React framework, and served
                 through Cloudflare.
@@ -32,7 +28,6 @@ function createTechnologyContent() {
 function createDataAnalyticsContent() {
     return (
         <>
-            {createHeader2('Data Storage and Analytics')}
             {createHeader3('Local Storage')}
             <p>
                 The core functionality of the site is not reliant on cookies,
