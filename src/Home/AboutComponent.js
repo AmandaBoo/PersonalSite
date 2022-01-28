@@ -26,8 +26,7 @@ function createIntroduction() {
             </div>
             <p className={'third-person-text'}>
                 Amanda Bui is a full-time Software Developer based in Minneapolis, MN who enjoys making fun
-                web-tools and resources for the games she plays,
-                and then letting them loose on the internet for everyone to have fun with!
+                web-tools and resources for the games she plays.
             </p>
 
             <p>
