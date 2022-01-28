@@ -171,15 +171,6 @@ body {
   padding-bottom: 50px;
 }
 
-.carousel {
-  width: 50%;
-}
-
-.half-container {
-  width: 50%;
-  margin: 20px;
-}
-
 .flex {
   display: flex;
 }
@@ -197,18 +188,10 @@ body {
   cursor: pointer;
 }
 
-.project-content-spacing {
-  padding: 0 20px 20px 20px;
-}
-
 .project-text-header {
   font: 100% $play-fair;
   font-size: 30px;
   color: $white;
-}
-
-.project-text-margin {
-  margin: 20px 30px 20px 30px;
 }
 
 .internal-link {
@@ -279,10 +262,6 @@ body {
   text-align: left;
 }
 
-.ul-line-height {
-  line-height: 2.6;
-}
-
 .project-img {
   width: 100%;
   max-width: $maximum-vid-width;
@@ -301,4 +280,27 @@ body {
 
 .padding-right {
   padding-right: 20px;
+}
+
+.inline-link {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.remove-margin {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.personal-img {
+  margin: 20px;
+  border-radius: 16px;
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.third-person-text {
+  color: $white;
+  font: 100% $play-fair;
+  font-size: 30px;
 }

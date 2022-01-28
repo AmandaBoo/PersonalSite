@@ -43,8 +43,8 @@ function createProjectGIFContainer() {
 function createOverviewContainer() {
     return (
         <div className={'body-text'}>
-            <p className={'project-text-header divider project-text-margin'}>OVERVIEW</p>
-            <div className={'project-text-line-height project-text-margin'}>
+            <p className={'project-text-header divider'}>OVERVIEW</p>
+            <div className={'project-text-line-height'}>
                 <p>
                     Genshin Cookbook is a webtool designed to help assist in tracking the 100+ recipes of Genshin Impact!
                 </p>
@@ -61,8 +61,8 @@ function createOverviewContainer() {
 function createStackContainer() {
     return (
         <div className={'body-text'}>
-            <p className={'project-text-header divider project-text-margin'}>TECHNICAL OVERVIEW</p>
-            <div className={'project-text-line-height project-text-margin'}>
+            <p className={'project-text-header divider'}>TECHNICAL OVERVIEW</p>
+            <div>
                 <p>
                     A brief description of the technical details of the site can be found below. A more thorough explanation can be found
                     at the repo using the link below.
@@ -80,8 +80,8 @@ function createStackContainer() {
 function createMyStoryContainer() {
     return (
         <div className={'body-text'}>
-            <p className={'project-text-header divider project-text-margin'}>MY STORY</p>
-            <div className={'project-text-line-height project-text-margin'}>
+            <p className={'project-text-header divider'}>MY STORY</p>
+            <div>
                 <p>
                     When I picked up Genshin Impact back in 2021, I never thought the parts of the game that would hook me the most would
                     be the Cooking and Crafting systems. With almost a 100 (and counting) recipes, I found myself quickly struggling to keep

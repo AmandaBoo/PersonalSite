@@ -7,12 +7,17 @@ export const LandingComponent = ({}) => {
             <img
                 className={'home-page-img'}
                 alt={'lavender'}
-                src={'./images/lavender.png'}
+                src={'./images/lavender.jpg'}
             />
             <img
                 className={'home-page-img'}
-                alt={'frogs-mushroom'}
-                src={'./images/frogs.png'}
+                alt={'tea and frogs'}
+                src={'./images/tea-frog.jpg'}
+            />
+            <img
+                className={'home-page-img'}
+                alt={'mushrooms and frogs'}
+                src={'./images/mushroom-frog.jpg'}
             />
         </div>
     );

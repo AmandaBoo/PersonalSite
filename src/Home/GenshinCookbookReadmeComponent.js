@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const    GenshinCookbookReadmeComponent = ({}) => {
+export const GenshinCookbookReadmeComponent = ({}) => {
     return (
         <>
             {createTechnologyContent()}
