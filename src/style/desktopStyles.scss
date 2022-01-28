@@ -7,6 +7,8 @@ $sub-font-size: 15px;
 $mini-font-size: 14px;
 $ingredient-img-size: 50px;
 $border-radius: 16px;
+$maximum-content-width: 760px;
+$maximum-vid-width: 1000px;
 
 $text-color: #343535;
 $white: white;
@@ -32,15 +34,15 @@ body {
 
   .landing-container {
     width: 100%;
-    height: 100vh;
     background-color: $left-color;
     text-align: center;
+    padding-bottom: 80px;
   }
 
   .project-container {
     width: 100%;
-    height: 100vh;
     background-color: $right-color;
+    padding-bottom: 80px;
   }
 }
 
@@ -64,13 +66,13 @@ body {
 }
 
 .body-text {
-  max-width: 760px;
+  max-width: $maximum-content-width;
   text-align: left;
   color: $white;
   font: 100% $main-font;
   font-size: 16px;
   line-height: 1.5rem;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .screenshot {
@@ -257,7 +259,7 @@ body {
 
 .project-card {
   text-align: center;
-  width: 25vw;
+  width: 35vw;
   border: 2px solid $white;
   border-radius: 16px;
   padding: 20px;
@@ -279,4 +281,24 @@ body {
 
 .ul-line-height {
   line-height: 2.6;
+}
+
+.project-img {
+  width: 100%;
+  max-width: $maximum-vid-width;
+}
+
+.project-header {
+  border-bottom: 2px solid $white;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.thumbnail-link {
+  cursor: pointer;
+}
+
+.padding-right {
+  padding-right: 20px;
 }

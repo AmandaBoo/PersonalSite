@@ -5,12 +5,12 @@ export const GenshinCookbookProject = ({}) => {
 
     return (
         <div className={'content-container fade-popup'}>
-            <div className={'mid-text link-spacing'}>GENSHIN COOKBOOK</div>
-            {createLinkContainer()}
+            <div className={'mid-text link-spacing project-header'}>GENSHIN COOKBOOK</div>
             {createProjectGIFContainer()}
-                {createOverviewContainer()}
-                {createMyStoryContainer()}
-                {createStackContainer()}
+            {createLinkContainer()}
+            {createOverviewContainer()}
+            {createMyStoryContainer()}
+            {createStackContainer()}
         </div>
     );
 }
@@ -29,11 +29,13 @@ function createLinkContainer() {
 function createProjectGIFContainer() {
     return (
         <div className={'link-spacing'}>
-            <img
-                className={'project-img'}
-                alt={'genshin-screenshot'}
-                src={'./images/genshin_gif.gif'}
-            />
+            <a className={'thumbnail-link'} href={'https://genshin-cookbook.com'} target="_blank">
+                <img
+                    className={'project-img'}
+                    alt={'genshin-screenshot'}
+                    src={'./images/genshin_gif.gif'}
+                />
+            </a>
         </div>
     );
 }
