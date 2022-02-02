@@ -5,6 +5,7 @@ import {AboutComponent} from "./AboutComponent";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {LandingComponent} from "./LandingComponent";
 import {ProjectCardsContainer} from "./ProjectCardsContainer";
+import {DNDProject} from "./DNDProject";
 
 export const HomePage = ({}) => {
     return (
@@ -20,6 +21,7 @@ export const HomePage = ({}) => {
                             <Route path={'/projects'} element={<ProjectCardsContainer/>}/>
                             <Route path={'/about'} element={<AboutComponent/>}/>
                             <Route path={'/genshincookbook'} element={<GenshinCookbookProject/>}/>
+                            <Route path={'/dndsheets'} element={<DNDProject/>}/>
                         </Routes>
                     </Router>
                 </div>

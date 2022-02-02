@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-export const    ProjectCard = ({projectName, projectLink, projectDescription, imgPath, imgUrl, isDisabled}) => {
+export const ProjectCard = ({projectName, projectLink, projectDescription, imgPath, imgUrl, isDisabled}) => {
     return (
         <div className={'flex-center padding-right'}>
             <div className={'project-card vertical-center'}>
@@ -29,7 +29,7 @@ function createThumbnailImage(imgPath, imgUrl) {
         return (
             <a>
                 <img
-                    className={'project-img'}
+                    className={'dnd-image'}
                     alt={'project-gif'}
                     src={imgPath}
                 />
