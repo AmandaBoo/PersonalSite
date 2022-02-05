@@ -15,7 +15,7 @@ export const ProjectCardsContainer = ({}) => {
                 projectName={'DND SHEETS'}
                 projectLink={'/dndsheets'}
                 projectDescription={"Printer-friendly, A5 wide, DND Sheets I custom-designed for use in 5e"}
-                imgPath={'./images/D20_eggs.jpg'}
+                imgPath={'./images/froggy_questboard.png'}
                 imgUrl={null}
             />
         </div>
