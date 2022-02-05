@@ -9,14 +9,14 @@ export const GenshinCookbookReadmeComponent = ({}) => {
     );
 };
 
-function createHeader3(headerTitle) {
-    return  <h3 className={'header'}>{headerTitle}</h3>
+function createHeader2(headerTitle) {
+    return  <h2 className={'header'}>{headerTitle}</h2>
 }
 
 function createTechnologyContent() {
     return (
         <>
-            {createHeader3('Technology and Hosting')}
+            {createHeader2('Technology and Hosting')}
             <p className={'project-text-line-height'}>
                 The site is written using Sass, and Javascript through the React framework, and served
                 through Cloudflare.
@@ -28,7 +28,7 @@ function createTechnologyContent() {
 function createDataAnalyticsContent() {
     return (
         <>
-            {createHeader3('Local Storage')}
+            {createHeader2('Local Storage')}
             <p>
                 The core functionality of the site is not reliant on cookies,
                 but instead, on local storage. Upon hitting the site for the first time, a user's local
@@ -42,7 +42,7 @@ function createDataAnalyticsContent() {
                 missing information to their local storage values.
             </p>
 
-            {createHeader3('Server Storage')}
+            {createHeader2('Server Storage')}
             <p>
                 Luckily, the majority of the site's data can be kept server-side
                 (exm. images of recipes and ingredients, details on how each recipe is made, etc)
@@ -53,7 +53,7 @@ function createDataAnalyticsContent() {
                 cooking and crafting flows.
             </p>
 
-            {createHeader3('Analytics')}
+            {createHeader2('Analytics')}
             <p>
                 Cookies are only used for the purposes of viewing basic user information through Google Analytics
             </p>
