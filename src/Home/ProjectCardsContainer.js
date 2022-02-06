@@ -3,7 +3,7 @@ import {ProjectCard} from "./ProjectCard";
 
 export const ProjectCardsContainer = ({}) => {
     return (
-        <div className={'flex-center fade-popup'}>
+        <div className={'flex-center fade-popup mobile-display-block'}>
             <ProjectCard
                 projectName={'GENSHIN COOKBOOK'}
                 projectLink={'/genshincookbook'}

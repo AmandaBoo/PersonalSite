@@ -5,7 +5,7 @@ export const GenshinCookbookProject = ({}) => {
 
     return (
         <div className={'fade-popup'}>
-            <div className={'mid-text link-spacing project-header'}>GENSHIN COOKBOOK</div>
+            <div className={'mid-text link-spacing project-header mobile-padding-none'}>GENSHIN COOKBOOK</div>
             {createProjectGIFContainer()}
             {createLinkContainer()}
             {createOverviewContainer()}

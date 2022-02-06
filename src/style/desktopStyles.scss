@@ -1,3 +1,5 @@
+$large-font-size: 100px;
+
 body {
   font: 100% $main-font;
   font-size: $main-font-size;
@@ -28,7 +30,7 @@ body {
 .large-text {
   color: $white;
   font: 100% $play-fair;
-  font-size: 100px;
+  font-size: $large-font-size;
 }
 
 .mid-text {
@@ -192,10 +194,18 @@ body {
   color: inherit;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 .selected-nav-link {
   cursor: default;
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.display-contents {
+  display: contents;
 }
 
 .project-link {
@@ -225,6 +235,7 @@ body {
   border: 2px solid $white;
   border-radius: 16px;
   padding: 20px;
+  min-width: 350px;
 }
 
 .project-card-description {

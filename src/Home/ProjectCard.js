@@ -1,10 +1,10 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
 
-export const ProjectCard = ({projectName, projectLink, projectDescription, imgPath, imgUrl, isDisabled}) => {
+export const ProjectCard = ({projectName, projectLink, projectDescription, imgPath, imgUrl}) => {
     return (
-        <div className={'flex-center padding-right'}>
-            <div className={'project-card vertical-center'}>
+        <div className={'flex-center padding-right mobile-padding-none'}>
+            <div className={'project-card vertical-center mobile-display-padding-bottom'}>
                 <NavLink
                     className={'project-link'}
                     to={projectLink} activeStyle={'selected-nav-link'}>{projectName}

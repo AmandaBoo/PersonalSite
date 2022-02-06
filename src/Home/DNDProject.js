@@ -4,7 +4,7 @@ export const DNDProject = ({}) => {
 
     return (
         <div className={'fade-popup'}>
-            <div className={'mid-text link-spacing project-header'}>DND SHEETS</div>
+            <div className={'mid-text link-spacing project-header mobile-padding-none'}>DND SHEETS</div>
             {createProjectImages()}
             {createOverview()}
             {createMyStory()}
@@ -15,7 +15,7 @@ export const DNDProject = ({}) => {
 
 function createProjectImages() {
     return (
-        <div className={'flex-center'}>
+        <div className={'flex-center mobile-display-block'}>
             <img
                 className={'dnd-sheet-img padding-top padding-right'}
                 src={'./images/fullStatSheet.jpg'}

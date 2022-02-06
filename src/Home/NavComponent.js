@@ -29,7 +29,7 @@ function renderMainLink() {
 function renderInternalLink(linkName, linkPath) {
     return (
         <NavLink
-            className={({ isActive }) => (isActive ? 'selected-nav-link link-spacing nav-link' : 'nav-link link-spacing internal-link')}
+            className={({ isActive }) => (isActive ? 'selected-nav-link link-spacing nav-link' : 'nav-link link-spacing internal-link underline')}
             to={linkPath} activeStyle={'selected-nav-link'}>{linkName}
         </NavLink>
     )
@@ -37,7 +37,7 @@ function renderInternalLink(linkName, linkPath) {
 
 function renderExternalLinks() {
     return (
-        <>
+        <div className={'display-contents mobile-display-block'}>
             <SvgLinkIcon url={'https://github.com/AmandaBoo/'}>
                 <GitHubIcon className={'svg-icon'} fontSize={'large'}/>
             </SvgLinkIcon>
@@ -47,6 +47,6 @@ function renderExternalLinks() {
             <SvgLinkIcon url={'https://www.linkedin.com/in/amanda-b-077b26160/'}>
                 <LinkedInIcon className={'svg-icon'} fontSize={'large'}/>
             </SvgLinkIcon>
-        </>
+        </div>
     )
 }
