@@ -55,8 +55,8 @@ function createMyStory() {
               DND Sheets was a project that sprung to life through no unusual circumstances for me.
               While I had been very happy with a handful of custom
               sheets I had found on Dungeon Masters Guild and other small businesses over the last few years,
-              I eventually realized that I was hacking around my current sheets to accommodate my needs,
-              such as scribbing notes in the margins of the sheets, grabbing blank sheets of paper to begin keeping
+              I eventually realized that I was hacking around them to accommodate my needs,
+              whether it be scribbling notes in the margins of the sheets, grabbing blank sheets of paper to begin keeping
               track of additional things, or not writing anything down, and instead keeping the relevant books and
               google tabs open on my laptop to reference mid-game.
           </p>
@@ -65,8 +65,8 @@ function createMyStory() {
               paying attention to the game and more time reading chicken scratch and digging through books.
           </p>
           <p>
-              My goal with these sheets is that I hope they can allow you to engage with your game, as most everything you will
-              need can be easily found and referenced with a few page flips.
+              My goal with these sheets is that I hope they can allow more people to engage with their game, as most everything that is
+              needed can be easily found and referenced within a few page flips.
           </p>
       </div>
     );
