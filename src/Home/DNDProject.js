@@ -17,7 +17,7 @@ function createProjectImages() {
     return (
         <div className={'flex-center mobile-display-block'}>
             <img
-                className={'dnd-sheet-img padding-top padding-right'}
+                className={'dnd-sheet-img padding-top padding-right mobile-padding-right-none'}
                 src={'./images/fullStatSheet.jpg'}
                 alt={'dnd sheet stats'}
             />
