@@ -10,11 +10,10 @@ body {
 }
 
 .root-container {
-  //height: 100vh;
+  min-height: 100vh;
   padding: 80px;
 
   .landing-container {
-    width: 100%;
     background-color: $left-color;
     text-align: center;
     padding-bottom: 80px;
@@ -308,6 +307,12 @@ body {
 .dnd-sheet-img {
   max-width: 378px;
   max-height: 504px;
+}
+
+.footer {
+  width: 100%;
+  min-height: 60px;
+  background-color: $left-color;
 }
 
 ::-webkit-scrollbar {

@@ -26,6 +26,7 @@ export const HomePage = ({}) => {
                     </Router>
                 </div>
             </div>
+            <footer className={'footer'}></footer>
         </div>
     );
 }
