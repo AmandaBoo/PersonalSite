@@ -22,12 +22,9 @@ $gray-color: #dde3ec;
 
 @import 'desktopStyles.scss';
 
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 768px) {
   .root-container {
     padding: 0;
   }
-}
-
-@media only screen and (max-width: 768px) {
   @import 'mobileStyles.scss';
 }
