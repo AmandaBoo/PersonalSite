@@ -14,9 +14,10 @@ body {
   padding: 80px;
 
   .landing-container {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $left-color;
     text-align: center;
+    padding-bottom: 80px;
   }
 
   .project-container {
