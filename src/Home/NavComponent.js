@@ -44,7 +44,7 @@ function renderExternalLinks() {
             <SvgLinkIcon url={'https://www.instagram.com/amanda_boo__/'}>
                 <InstagramIcon className={'svg-icon'} fontSize={'large'}/>
             </SvgLinkIcon>
-            <SvgLinkIcon url={'https://www.linkedin.com/in/amanda-b-077b26160/'}>
+            <SvgLinkIcon url={'https://www.linkedin.com/in/amandabui-dev/'}>
                 <LinkedInIcon className={'svg-icon'} fontSize={'large'}/>
             </SvgLinkIcon>
         </div>
