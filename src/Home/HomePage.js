@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {GenshinCookbookProject} from "./GenshinCookbookProject";
 import {NavComponent} from "./NavComponent";
 import {AboutComponent} from "./AboutComponent";

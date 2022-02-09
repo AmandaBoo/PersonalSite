@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 export const ProjectCard = ({projectName, projectLink, projectDescription, imgPath, imgUrl}) => {
     return (
-        <div className={'flex-center padding-right mobile-padding-none'}>
+        <div className={'flex-center padding-right padding-left mobile-padding-none'}>
             <div className={'project-card vertical-center mobile-display-padding-bottom'}>
                 <NavLink
                     className={'project-link'}
