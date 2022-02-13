@@ -1,14 +1,17 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {InternalLink} from "./InternalLInk";
 
 export const ProjectCard = ({projectName, projectLink, projectDescription, imgPath}) => {
     return (
-        <div className={'flex justify-center pb-5 text-left mx-10'}>
+        <div className={'flex justify-center pb-5 text-left mx-10 fade-popup'}>
             <div className={'flex justify-center flex-col border border-white border-4 bg-hover-black'}>
                 {createThumbnailImage(imgPath)}
                 {createTitle(projectName)}
                 {createTextBody(projectDescription)}
-                {createInternalLink(projectName, projectLink)}
+                <InternalLink
+                    displayName={'ARTICLE'}
+                    internalLink={projectLink}
+                />
             </div>
         </div>
     );
@@ -38,18 +41,6 @@ function createThumbnailImage(imgPath) {
                 alt={'project-gif'}
                 src={imgPath}
             />
-        </div>
-    );
-}
-
-function createInternalLink(projectName, projectLink) {
-    return (
-        <div className={'px-0.5 p-3 flex justify-center'}>
-            <NavLink
-                className={'p-2 rounded bg-pale-pink text-dark-pink'}
-                to={projectLink}
-            >ARTICLE
-            </NavLink>
         </div>
     );
 }
