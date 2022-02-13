@@ -9,7 +9,7 @@ export const NavComponent = ({}) => {
     return (
         <>
             {renderMainLink()}
-            <div className={'flex justify-center flex-col md:flex-row mx-2 md:m-0'}>
+            <div className={'flex justify-center flex-col md:flex-row mx-2 md:m-0 pb-20'}>
                 {renderInternalLink('PROJECTS', '/projects')}
                 {renderExternalLinks()}
                 {renderInternalLink('ABOUT', '/about')}
