@@ -1,7 +1,7 @@
 import React from 'react';
-import {GenshinCookbookReadmeComponent} from "./GenshinCookbookReadmeComponent";
+import {GenshinCookbookReadmeComponent} from "../components/GenshinCookbookReadmeComponent";
 
-export const GenshinCookbookProject = ({}) => {
+export const GenshinCookbookPage = ({}) => {
 
     return (
         <div className={'fade-popup'}>

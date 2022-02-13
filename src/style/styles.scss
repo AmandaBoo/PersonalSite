@@ -1,30 +1,40 @@
-$main-font: 'Roboto', sans-serif;
-$play-fair: 'Playfair Display', serif;
-$site-nav-bar-height: 60px;
-$title-font-size: 20px;
-$main-font-size: 16px;
-$sub-font-size: 15px;
-$mini-font-size: 14px;
-$ingredient-img-size: 50px;
-$border-radius: 16px;
-$maximum-content-width: 760px;
-$maximum-vid-width: 1000px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//
+//$main-font: 'Roboto', sans-serif;
+//$play-fair: 'Playfair Display', serif;
+//$site-nav-bar-height: 60px;
+//$title-font-size: 20px;
+//$main-font-size: 16px;
+//$sub-font-size: 15px;
+//$mini-font-size: 14px;
+//$ingredient-img-size: 50px;
+//$border-radius: 16px;
+//$maximum-content-width: 760px;
+//$maximum-vid-width: 1000px;
+//
+//$text-color: #343535;
+//$white: white;
+//$blue-font: rgba(48,63,128);
+//$left-color: rgba(250,171,171);
+//$right-color: #f99797;
+//$pink: #ffe7e3;
+//$red: #fe5d40;
+//$hover-color: rgba(215, 131, 127);
+//$gray-color: #dde3ec;
 
-$text-color: #343535;
-$white: white;
-$blue-font: rgba(48,63,128);
-$left-color: rgba(250,171,171);
-$right-color: #f99797;
-$pink: #ffe7e3;
-$red: #fe5d40;
-$hover-color: rgba(215, 131, 127);
-$gray-color: #dde3ec;
-
-@import 'desktopStyles.scss';
-
-@media only screen and (max-width: 768px) {
-  .root-container {
-    padding: 0;
-  }
-  @import 'mobileStyles.scss';
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+//@import 'desktopStyles.scss';
+
+//@media only screen and (max-width: 768px) {
+//  .root-container {
+//    padding: 0;
+//  }
+//  @import 'mobileStyles.scss';
+//}

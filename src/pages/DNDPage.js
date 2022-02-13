@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const DNDProject = ({}) => {
+export const DNDPage = ({}) => {
 
     return (
         <div className={'fade-popup'}>

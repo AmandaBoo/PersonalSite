@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const AboutComponent = ({}) => {
+export const AboutPage = ({}) => {
 
     return (
         <div className={'fade-popup'}>

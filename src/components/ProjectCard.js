@@ -7,7 +7,7 @@ export const ProjectCard = ({projectName, projectLink, projectDescription, imgPa
             <div className={'project-card vertical-center mobile-display-padding-bottom'}>
                 <NavLink
                     className={'project-link'}
-                    to={projectLink} activeStyle={'selected-nav-link'}>{projectName}
+                    to={projectLink}>{projectName}
                 </NavLink>
                 {createThumbnailImage(imgPath, imgUrl)}
                 {createTextBody(projectDescription)}

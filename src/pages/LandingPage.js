@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LandingComponent = ({}) => {
+export const LandingPage = ({}) => {
 
     return (
         <div className={'flex-center fade-popup'}>
