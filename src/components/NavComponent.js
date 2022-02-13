@@ -9,7 +9,7 @@ export const NavComponent = ({}) => {
     return (
         <>
             {renderMainLink()}
-            <div className={'flex justify-center'}>
+            <div className={'flex justify-center flex-col md:flex-row mx-2 md:m-0'}>
                 {renderInternalLink('PROJECTS', '/projects')}
                 {renderExternalLinks()}
                 {renderInternalLink('ABOUT', '/about')}
@@ -20,7 +20,7 @@ export const NavComponent = ({}) => {
 
 function renderMainLink() {
     return (
-        <div className={'text-8xl font-serif text-white py-20'}>
+        <div className={'text-6xl md:text-8xl font-serif text-white py-20'}>
             <NavLink to={"/"}>AMANDA BUI</NavLink>
         </div>
     );
@@ -39,7 +39,7 @@ function renderInternalLink(linkName, linkPath) {
 
 function renderExternalLinks() {
     return (
-        <div className={'contents'}>
+        <div className={'flex justify-center'}>
             <SvgLinkIcon url={'https://github.com/AmandaBoo/'}>
                 <GitHubIcon className={'text-pale-pink'} fontSize={'large'}/>
             </SvgLinkIcon>
