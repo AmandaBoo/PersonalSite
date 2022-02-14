@@ -22,6 +22,27 @@ body {
   -o-animation: fadeIn 1s;
 }
 
+//{
+//  "short_name": "Amanda Bui",
+//  "name" : "Amanda Bui's Personal Site",
+//  "icons": [
+//    {
+//      "src": "./images/logoSmall.png",
+//      "type": "image/png",
+//      "sizes": "192x192"
+//    },
+//    {
+//      "src": "./images/logoLarge.png",
+//      "type": "image/png",
+//      "sizes": "512x512"
+//    }
+//  ],
+//  "start_url": "https://amandabui.com",
+//  "background_color": "#FAABAB",
+//  "theme-color": "#d7837f",
+//  "description": "Amanda Bui's Personal Site"
+//}
+
 @keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
