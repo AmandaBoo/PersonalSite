@@ -31,7 +31,7 @@ function renderInternalLink(linkName, linkPath) {
         <NavLink
             className={
                 ({ isActive }) => (isActive ? 'text-3xl p-5 line-through'
-                    : 'text-3xl p-5 underline hover:text-white hover:bg-hover-black rounded-3xl')}
+                    : 'text-3xl p-5 underline underline-offset-2 hover:text-white hover:bg-hover-black rounded-3xl')}
             to={linkPath}>{linkName}
         </NavLink>
     )

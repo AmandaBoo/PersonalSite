@@ -10,7 +10,7 @@ export const DNDPage = ({}) => {
                 projectTitleName={'DND SHEETS'}
             />
             {createProjectImages()}
-            <div className={'max-w-article text-left m-0-auto py-10'}>
+            <div className={'max-w-article text-left m-0-auto md:py-10'}>
                 {createOverview()}
                 {createMyStory()}
                 {createDownloadLinks()}
@@ -47,9 +47,9 @@ function createOverview() {
 
 function createMyStory() {
     return (
-      <div>
+      <div className={'article'}>
           {createTitle('MY STORY')}
-          <p className={'my-4'}>
+          <p>
               DND Sheets was a project that sprung to life through no unusual circumstances for me.
               While I had been very happy with a handful of custom
               sheets I had found on Dungeon Masters Guild and other small businesses over the last few years,
@@ -58,11 +58,11 @@ function createMyStory() {
               track of additional things, or not writing anything down, and instead keeping the relevant books and
               google tabs open on my laptop to reference mid-game.
           </p>
-          <p className={'my-4'}>
+          <p>
               The chaos of trying to figure out what I could or couldn't do with my character resulted in me spending less time
               paying attention to the game and more time reading chicken scratch and digging through books.
           </p>
-          <p className={'my-4'}>
+          <p>
               My goal with these sheets is that I hope they can allow more people to engage with their game, as most everything that is
               needed can be easily found and referenced within a few page flips.
           </p>
