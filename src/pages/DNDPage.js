@@ -54,8 +54,8 @@ function createMyStory() {
               While I had been very happy with a handful of custom
               sheets I had found on Dungeon Masters Guild and other small businesses over the last few years,
               I eventually realized that I was hacking around them to accommodate my needs,
-              whether it be scribbling notes in the margins of the sheets, grabbing blank sheets of paper to begin keeping
-              track of additional things, or not writing anything down, and instead keeping the relevant books and
+              whether it be scribbling campaign notes in the margins, grabbing additional sheets of paper to begin to keep track
+              of NPCS, quests, or party health, or just not writing anything down, and instead keeping the relevant books and
               google tabs open on my laptop to reference mid-game.
           </p>
           <p>
