@@ -1,30 +1,35 @@
 import React from 'react';
 
-export const AboutComponent = ({}) => {
-
+export const AboutPage = ({}) => {
     return (
-        <div className={'fade-popup'}>
+        <div className={'fade-popup p-5 md:p-0'}>
+            {createPersonalImageContainer()}
             {createIntroduction()}
+        </div>
+    );
+}
+
+function createPersonalImageContainer() {
+    return (
+        <div className={'flex justify-center'}>
+            <img
+                className={'w-1/2 md:w-3/12 rounded-lg px-2'}
+                alt={'art-museum'}
+                src={'/images/art_museum.jpg'}
+            />
+            <img
+                className={'w-1/2 md:w-3/12 rounded-lg px-2'}
+                alt={'bridge'}
+                src={'/images/bridge2.jpg'}
+            />
         </div>
     );
 }
 
 function createIntroduction() {
     return (
-        <div className={'body-text'}>
-            <div className={'flex-center'}>
-                <img
-                    className={'personal-img'}
-                    alt={'art-museum'}
-                    src={'/images/art_museum.jpg'}
-                />
-                <img
-                    className={'personal-img'}
-                    alt={'bridge'}
-                    src={'/images/bridge2.jpg'}
-                />
-            </div>
-            <p className={'third-person-text'}>
+        <div className={'md:py-10 max-w-article m-0-auto text-left article'}>
+            <p className={'text-3xl text-white my-[1em] font-serif'}>
                 Amanda Bui is a full-time Software Developer based in Minneapolis, MN who enjoys making fun
                 web-tools and resources for the games she plays.
             </p>

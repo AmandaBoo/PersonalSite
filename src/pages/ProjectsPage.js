@@ -1,22 +1,20 @@
 import React from 'react';
-import {ProjectCard} from "./ProjectCard";
+import {ProjectCard} from "../components/ProjectCard";
 
-export const ProjectCardsContainer = ({}) => {
+export const ProjectsPage = () => {
     return (
-        <div className={'flex-center fade-popup mobile-display-block'}>
+        <div className={'flex justify-center flex-wrap'}>
             <ProjectCard
                 projectName={'GENSHIN COOKBOOK'}
                 projectLink={'/genshincookbook'}
                 projectDescription={"A webtool designed to assist in tracking the many recipes of Genshin Impact"}
-                imgPath={'./images/genshin_smol_gif.gif'}
-                imgUrl={'https://genshin-cookbook.com'}
+                imgPath={'./images/genshin-screenshot.png'}
             />
             <ProjectCard
                 projectName={'DND SHEETS'}
                 projectLink={'/dndsheets'}
                 projectDescription={"Printer-friendly, A5 wide, DND Sheets I custom-designed for use in 5e"}
-                imgPath={'./images/froggy_questboard.png'}
-                imgUrl={null}
+                imgPath={'./images/fullStatSheet.jpg'}
             />
         </div>
     );

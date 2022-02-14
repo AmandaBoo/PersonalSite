@@ -1,50 +1,65 @@
 import React from 'react';
-import {GenshinCookbookReadmeComponent} from "./GenshinCookbookReadmeComponent";
+import {GenshinCookbookReadmeComponent} from "../components/GenshinCookbookReadmeComponent";
+import {ExternalLink} from "../components/ExternalLink";
+import {ProjectTitle} from "../components/ProjectTitle";
 
-export const GenshinCookbookProject = ({}) => {
+export const GenshinCookbookPage = ({}) => {
 
     return (
-        <div className={'fade-popup'}>
-            <div className={'mid-text link-spacing project-header mobile-padding-none'}>GENSHIN COOKBOOK</div>
+        <div className={'fade-popup p-5 md:p-0'}>
+            <ProjectTitle
+                projectTitleName={'GENSHIN COOKBOOK'}
+            />
             {createProjectGIFContainer()}
             {createLinkContainer()}
-            {createOverviewContainer()}
-            {createMyStoryContainer()}
-            {createStackContainer()}
+            <div className={'max-w-article text-left m-0-auto py-10'}>
+                {createOverviewContainer()}
+                {createMyStoryContainer()}
+                {createStackContainer()}
+            </div>
         </div>
     );
 }
 
-function createLinkContainer() {
+function
+
+createLinkContainer() {
     return (
-        <div className={'flex-center'}>
-            {createLink('https://genshin-cookbook.com/',
-                'Genshin Cookbook', 'WEBSITE')}
-            {createLink( 'https://github.com/AmandaBoo/Project-Not-Boba',
-                'GC Repo', 'REPO')}
+        <div className={'flex justify-center'}>
+            <ExternalLink
+                url={'https://genshin-cookbook.com/'}
+                title={'External Link to Genshin Cookbook Website'}
+                displayName={'WEBSITE'}
+            />
+            <ExternalLink
+                url={'https://github.com/AmandaBoo/Project-Not-Boba'}
+                title={'External Link to Genshin Cookbook Repository'}
+                displayName={'REPO'}
+            />
         </div>
     );
 }
 
 function createProjectGIFContainer() {
     return (
-        <div className={'link-spacing'}>
-            <a className={'thumbnail-link'} href={'https://genshin-cookbook.com'} target="_blank">
-                <img
-                    className={'project-img'}
-                    alt={'genshin-screenshot'}
-                    src={'./images/genshin_gif.gif'}
-                />
-            </a>
+        <div className={'flex justify-center px-16 py-8'}>
+            <div className={'max-w-[1500px]'}>
+                <a className={'thumbnail-link'} href={'https://genshin-cookbook.com'} target="_blank">
+                    <img
+                        alt={'genshin-screenshot'}
+                        src={'./images/genshin_gif.gif'}
+                    />
+                </a>
+            </div>
         </div>
     );
 }
 
 function createOverviewContainer() {
     return (
-        <div className={'body-text'}>
-            <p className={'project-text-header divider'}>OVERVIEW</p>
-            <div className={'project-text-line-height'}>
+        <>
+            {createTitle('OVERVIEW')}
+            <div className={'article'}>
                 <p>
                     Genshin Cookbook is a webtool designed to help assist in tracking the 100+ recipes of Genshin Impact!
                 </p>
@@ -54,34 +69,37 @@ function createOverviewContainer() {
                     with plans to support the Furniture system shortly afterwards!
                 </p>
             </div>
-        </div>
+        </>
     );
 }
 
 function createStackContainer() {
     return (
-        <div className={'body-text'}>
-            <p className={'project-text-header divider'}>TECHNICAL OVERVIEW</p>
+        <>
+            {createTitle('TECHNICAL OVERVIEW')}
             <div>
                 <p>
                     A brief description of the technical details of the site can be found below. A more thorough explanation can be found
                     at the repo using the link below.
                 </p>
-                <div className={'text-align-center'}>
-                    {createLink('https://github.com/AmandaBoo/Project-Not-Boba#readme', 'readme', 'README')}
+                <div className={'text-center'}>
+                    <ExternalLink
+                        url={'https://github.com/AmandaBoo/Project-Not-Boba#readme'}
+                        title={'External Link to Genshin Cookbook Readme'}
+                        displayName={'README'}
+                    />
                 </div>
-
                 <GenshinCookbookReadmeComponent/>
             </div>
-        </div>
+        </>
     );
 }
 
 function createMyStoryContainer() {
     return (
-        <div className={'body-text'}>
-            <p className={'project-text-header divider'}>MY STORY</p>
-            <div>
+        <>
+            {createTitle('MY STORY')}
+            <div className={'article'}>
                 <p>
                     When I picked up Genshin Impact back in 2021, I never thought the parts of the game that would hook me the most would
                     be the Cooking and Crafting systems. With almost a 100 (and counting) recipes, I found myself quickly struggling to keep
@@ -98,16 +116,12 @@ function createMyStoryContainer() {
                     So I set about making my own~
                 </p>
             </div>
-        </div>
+        </>
     );
 }
 
-function createLink(url, title, displayName) {
+function createTitle(title) {
     return (
-        <a className={'link'}
-           href={url}
-           title={title}
-           target="_blank"
-        >{displayName}</a>
+        <p className={'text-3xl my-[1em] font-serif border-b-[3px] border-white'}>{title}</p>
     );
 }

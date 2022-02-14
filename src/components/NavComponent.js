@@ -9,7 +9,7 @@ export const NavComponent = ({}) => {
     return (
         <>
             {renderMainLink()}
-            <div className={'flex-center small-text nav-bar'}>
+            <div className={'flex justify-center flex-col md:flex-row mx-2 md:m-0 pb-20'}>
                 {renderInternalLink('PROJECTS', '/projects')}
                 {renderExternalLinks()}
                 {renderInternalLink('ABOUT', '/about')}
@@ -20,8 +20,8 @@ export const NavComponent = ({}) => {
 
 function renderMainLink() {
     return (
-        <div className={'large-text name-container'}>
-            <NavLink className={'nav-link'} to={"/"}>AMANDA BUI</NavLink>
+        <div className={'text-6xl md:text-8xl font-serif text-white py-20'}>
+            <NavLink to={"/"}>AMANDA BUI</NavLink>
         </div>
     );
 }
@@ -29,23 +29,25 @@ function renderMainLink() {
 function renderInternalLink(linkName, linkPath) {
     return (
         <NavLink
-            className={({ isActive }) => (isActive ? 'selected-nav-link link-spacing nav-link' : 'nav-link link-spacing internal-link underline')}
-            to={linkPath} activeStyle={'selected-nav-link'}>{linkName}
+            className={
+                ({ isActive }) => (isActive ? 'text-3xl p-5 line-through'
+                    : 'text-3xl p-5 underline underline-offset-2 hover:text-white hover:bg-hover-black rounded-3xl')}
+            to={linkPath}>{linkName}
         </NavLink>
     )
 }
 
 function renderExternalLinks() {
     return (
-        <div className={'display-contents mobile-display-block'}>
+        <div className={'flex justify-center'}>
             <SvgLinkIcon url={'https://github.com/AmandaBoo/'}>
-                <GitHubIcon className={'svg-icon'} fontSize={'large'}/>
+                <GitHubIcon className={'text-pale-pink'} fontSize={'large'}/>
             </SvgLinkIcon>
             <SvgLinkIcon url={'https://www.instagram.com/amanda_boo__/'}>
-                <InstagramIcon className={'svg-icon'} fontSize={'large'}/>
+                <InstagramIcon className={'text-pale-pink'} fontSize={'large'}/>
             </SvgLinkIcon>
             <SvgLinkIcon url={'https://www.linkedin.com/in/amandabui-dev/'}>
-                <LinkedInIcon className={'svg-icon'} fontSize={'large'}/>
+                <LinkedInIcon className={'text-pale-pink'} fontSize={'large'}/>
             </SvgLinkIcon>
         </div>
     )

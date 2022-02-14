@@ -1,30 +1,62 @@
-$main-font: 'Roboto', sans-serif;
-$play-fair: 'Playfair Display', serif;
-$site-nav-bar-height: 60px;
-$title-font-size: 20px;
-$main-font-size: 16px;
-$sub-font-size: 15px;
-$mini-font-size: 14px;
-$ingredient-img-size: 50px;
-$border-radius: 16px;
-$maximum-content-width: 760px;
-$maximum-vid-width: 1000px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-$text-color: #343535;
-$white: white;
-$blue-font: rgba(48,63,128);
-$left-color: rgba(250,171,171);
-$right-color: #f99797;
-$pink: #ffe7e3;
-$red: #fe5d40;
-$hover-color: rgba(215, 131, 127);
-$gray-color: #dde3ec;
+$dark-pink: rgba(215, 131, 127);
 
-@import 'desktopStyles.scss';
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 
-@media only screen and (max-width: 768px) {
-  .root-container {
-    padding: 0;
-  }
-  @import 'mobileStyles.scss';
+.article > p {
+  margin: 1em 0;
+}
+
+.fade-popup {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $dark-pink;
+  border-radius: 9px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
 }
