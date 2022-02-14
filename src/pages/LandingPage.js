@@ -13,10 +13,11 @@ export const LandingPage = ({}) => {
 
 function createLandingImg(src, alt) {
     return (
-        <img
-            className={'w-3/12 m-2'}
-            alt={alt}
-            src={src}
-        />
+        <div className={'w-3/12 m-2'}>
+            <img
+                alt={alt}
+                src={src}
+            />
+        </div>
     );
 }
