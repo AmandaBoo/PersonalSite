@@ -75,29 +75,33 @@ function createDownloadLinks() {
         <div className={'text-center'}>
             <div>
                 <p className={'my-[1em] font-serif text-white text-3xl'}>Generic Sheets</p>
-                <DownloadLink
-                    pdfPath={'HalfCaster.pdf'}
-                    displayName={'Half Caster'}
-                />
-                <DownloadLink
-                    pdfPath={'FullCaster.pdf'}
-                    displayName={'Full Caster'}
-                />
-                <DownloadLink
-                    pdfPath={'Martial.pdf'}
-                    displayName={'Martial'}
-                />
+                <div className={'flex flex-wrap justify-center'}>
+                    <DownloadLink
+                        pdfPath={'HalfCaster.pdf'}
+                        displayName={'Half Caster'}
+                    />
+                    <DownloadLink
+                        pdfPath={'FullCaster.pdf'}
+                        displayName={'Full Caster'}
+                    />
+                    <DownloadLink
+                        pdfPath={'Martial.pdf'}
+                        displayName={'Martial'}
+                    />
+                </div>
             </div>
             <div>
                 <p className={'my-[1em] font-serif text-white text-3xl'}>Class Specific Sheets</p>
-                <DownloadLink
-                    pdfPath={'Artificer.pdf'}
-                    displayName={'Artificer'}
-                />
-                <DownloadLink
-                    pdfPath={'Warlock.pdf'}
-                    displayName={'Warlock'}
-                />
+                <div className={'flex flex-wrap justify-center'}>
+                    <DownloadLink
+                        pdfPath={'Artificer.pdf'}
+                        displayName={'Artificer'}
+                    />
+                    <DownloadLink
+                        pdfPath={'Warlock.pdf'}
+                        displayName={'Warlock'}
+                    />
+                </div>
             </div>
         </div>
     );
@@ -105,7 +109,7 @@ function createDownloadLinks() {
 
 function createProjectImg(src, alt) {
     return (
-        <div className={'min-w-[33%] w-1/3 px-2'}>
+        <div className={'w-1/2 md:w-1/3 px-2'}>
             <img
                 src={src}
                 alt={alt}

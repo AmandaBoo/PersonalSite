@@ -20,7 +20,7 @@ export const NavComponent = ({}) => {
 
 function renderMainLink() {
     return (
-        <div className={'text-6xl md:text-8xl font-serif text-white py-20'}>
+        <div className={'text-6xl md:text-8xl font-serif text-white py-20 px-5'}>
             <NavLink to={"/"}>AMANDA BUI</NavLink>
         </div>
     );
