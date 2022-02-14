@@ -17,6 +17,12 @@ module.exports = {
         'light-grey': '#dde3ec',
         'hover-black': 'rgba(0, 0, 0, 0.04)',
       },
+      maxWidth: {
+        'article': '47.5rem',
+      },
+      margin: {
+        '0-auto': '0 auto',
+      }
     },
   },
   plugins: [],

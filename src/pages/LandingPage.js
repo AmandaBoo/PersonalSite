@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const LandingPage = ({}) => {
+export const LandingPage = () => {
 
     return (
         <div className={'flex justify-center fade-popup pb-5'}>
@@ -13,7 +13,7 @@ export const LandingPage = ({}) => {
 
 function createLandingImg(src, alt) {
     return (
-        <div className={'w-3/12 m-2'}>
+        <div className={'min-w-[25%] w-3/12 m-2'}>
             <img
                 alt={alt}
                 src={src}

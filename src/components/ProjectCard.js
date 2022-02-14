@@ -2,11 +2,10 @@ import React, {useState} from 'react';
 import {InternalLink} from "./InternalLInk";
 
 export const ProjectCard = ({projectName, projectLink, projectDescription, imgPath}) => {
-    const [isLoaded, setIsLoaded] = useState(false);
     return (
         <div className={'flex justify-center pb-5 text-left mx-10 fade-popup'}>
             <div className={'flex justify-center flex-col border border-white border-4 bg-hover-black'}>
-                {createThumbnailImage(imgPath, setIsLoaded)}
+                {createThumbnailImage(imgPath)}
                 {createTitle(projectName)}
                 {createTextBody(projectDescription)}
                 <InternalLink
@@ -34,11 +33,10 @@ function createTextBody(projectDescription) {
     );
 }
 
-function createThumbnailImage(imgPath, setIsLoaded) {
+function createThumbnailImage(imgPath) {
     return (
         <div className={'flex justify-center w-96 h-96'}>
             <img
-                onLoad={() => setIsLoaded(true)}
                 className={'object-cover'}
                 alt={'project-gif'}
                 src={imgPath}

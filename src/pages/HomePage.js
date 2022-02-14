@@ -7,7 +7,7 @@ import {LandingPage} from "./LandingPage";
 import {ProjectsPage} from "./ProjectsPage";
 import {DNDPage} from "./DNDPage";
 
-export const HomePage = ({}) => {
+export const HomePage = () => {
     return (
         <div className={'m-8 bg-primary-pink text-center'}> {/* creates root level container*/}
             <div> {/* creates container for contents of page*/}

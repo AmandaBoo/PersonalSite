@@ -1,7 +1,7 @@
 import React from 'react';
 import {ProjectCard} from "../components/ProjectCard";
 
-export const ProjectsPage = ({}) => {
+export const ProjectsPage = () => {
     return (
         <div className={'flex justify-center flex-wrap'}>
             <ProjectCard
