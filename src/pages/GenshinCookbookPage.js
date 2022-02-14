@@ -42,7 +42,7 @@ createLinkContainer() {
 
 function createProjectGIFContainer() {
     return (
-        <div className={'flex justify-center px-16 py-8'}>
+        <div className={'flex justify-center md:px-16 py-8'}>
             <div className={'max-w-[1500px]'}>
                 <a className={'thumbnail-link'} href={'https://genshin-cookbook.com'} target="_blank">
                     <img
@@ -82,7 +82,7 @@ function createStackContainer() {
                     A brief description of the technical details of the site can be found below. A more thorough explanation can be found
                     at the repo using the link below.
                 </p>
-                <div className={'text-center'}>
+                <div className={'text-center py-5'}>
                     <ExternalLink
                         url={'https://github.com/AmandaBoo/Project-Not-Boba#readme'}
                         title={'External Link to Genshin Cookbook Readme'}
