@@ -9,7 +9,7 @@ import {DNDPage} from "./DNDPage";
 
 export const HomePage = () => {
     return (
-        <div className={'m-8 bg-primary-pink text-center'}> {/* creates root level container*/}
+        <div className={'m-3 md:m-8 bg-primary-pink text-center'}> {/* creates root level container*/}
             <div> {/* creates container for contents of page*/}
                 <div>
                     <Router> {/* router used to navigate throughout site*/}

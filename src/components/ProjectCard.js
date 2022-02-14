@@ -27,7 +27,7 @@ function createTitle(projectName) {
 
 function createTextBody(projectDescription) {
     return (
-        <p className={'w-96 pb-10 pb-3 px-3'}>
+        <p className={'md:w-96 pb-10 pb-3 px-3'}>
             {projectDescription}
         </p>
     );
@@ -35,7 +35,7 @@ function createTextBody(projectDescription) {
 
 function createThumbnailImage(imgPath) {
     return (
-        <div className={'flex justify-center w-96 h-96'}>
+        <div className={'flex justify-center md:w-96 md:h-96'}>
             <img
                 className={'object-cover'}
                 alt={'project-gif'}
