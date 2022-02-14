@@ -39,7 +39,7 @@ function createIntroduction() {
             </p>
 
             <p>
-                I'm just a person who falls off of colorful rocks at my bouldering gym,
+                I'm just someone who falls off of colorful rocks at my bouldering gym,
                 plays DND with my friends, and loves boba!
             </p>
 
