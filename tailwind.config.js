@@ -9,13 +9,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'dark-grey': '#343535',
         'primary-pink': 'rgba(250,171,171)',
-        'secondary-pink': '#f99797',
         'dark-pink': '#d7837f',
-        'pale-pink': ' #ffe7e3',
-        'light-grey': '#dde3ec',
-        'hover-black': 'rgba(0, 0, 0, 0.04)',
+        'brown': '#381c00',
+        'light-brown': '#9c8063',
+        'hover-black': 'rgba(0, 0, 0, 0.2)',
       },
       maxWidth: {
         'article': '47.5rem',
