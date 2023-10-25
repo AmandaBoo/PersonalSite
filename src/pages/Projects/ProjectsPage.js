@@ -1,5 +1,6 @@
 import React from 'react';
-import {ProjectCard} from "../components/ProjectCard";
+import {ProjectCard} from "./components/ProjectCard";
+import {dndBlurb, genshinBlurb} from "./consts";
 
 export const ProjectsPage = () => {
     return (
@@ -7,13 +8,13 @@ export const ProjectsPage = () => {
             <ProjectCard
                 projectName={'GENSHIN COOKBOOK'}
                 projectLink={'/genshincookbook'}
-                projectDescription={"A webtool designed to assist in tracking the many recipes of Genshin Impact"}
+                projectDescription={genshinBlurb}
                 imgPath={'./images/genshin-screenshot.png'}
             />
             <ProjectCard
                 projectName={'DND SHEETS'}
                 projectLink={'/dndsheets'}
-                projectDescription={"Printer-friendly, A5 wide, DND Sheets I custom-designed for use in 5e"}
+                projectDescription={dndBlurb}
                 imgPath={'./images/fullStatSheet.jpg'}
             />
         </div>

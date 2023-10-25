@@ -10,7 +10,7 @@ export const GenshinCookbookReadmeComponent = ({}) => {
 };
 
 function createHeader2(headerTitle) {
-    return  <h2 className={'font-serif border-b-2 border-white text-2xl my-[1rem]'}>{headerTitle}</h2>
+    return  <h2 className={'font-serif border-b-2 border-brown text-2xl my-[1rem]'}>{headerTitle}</h2>
 }
 
 function createTechnologyContent() {
@@ -51,11 +51,6 @@ function createDataAnalyticsContent() {
                 Upon landing on the site, a user's local storage is scanned, updated if needed, and then used
                 in conjunction with the server-side files to populate the UI and run simple calculations used in the
                 cooking and crafting flows.
-            </p>
-
-            {createHeader2('Analytics')}
-            <p>
-                Cookies are only used for the purposes of viewing basic user information through Google Analytics.
             </p>
         </div>
     );
