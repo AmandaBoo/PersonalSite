@@ -1,7 +1,7 @@
 import React from "react";
 import {PDFDownloadLink} from "./PDFDownloadLink";
 
-export const InternalDownloadLinksContainer = () => {
+export const DNDInternalDownloadLinksContainer = () => {
     return (
         <div className={'text-center'}>
             <div>

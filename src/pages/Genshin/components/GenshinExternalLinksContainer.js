@@ -1,7 +1,7 @@
-import {ExternalLink} from "./ExternalLink";
+import {ExternalLink} from "../../../components/sharedPage/ExternalLink";
 import React from "react";
 
-export const ExternalLinksContainer = () => {
+export const GenshinExternalLinksContainer = () => {
     return (
         <div className={'flex justify-center'}>
             <ExternalLink

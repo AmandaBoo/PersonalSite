@@ -1,5 +1,5 @@
 import React from 'react';
-import {InternalProjectLInk} from "./InternalLink";
+import {InternalProjectLink} from "./InternalLink";
 import {ProjectDescription} from "./ProjectDescription";
 import {ThumbnailImage} from "./ThumbnailImage";
 import {ProjectTitle} from "./ProjectTitle";
@@ -11,7 +11,7 @@ export const ProjectCard = ({projectName, projectLink, projectDescription, imgPa
                 <ThumbnailImage imgPath={imgPath}/>
                 <ProjectTitle title={projectName}/>
                 <ProjectDescription description={projectDescription}/>
-                <InternalProjectLInk
+                <InternalProjectLink
                     name={'ARTICLE'}
                     path={projectLink}
                 />
