@@ -1,5 +1,5 @@
 import React from "react";
-import {ExternalLink} from "./components/ExternalLink";
+import {ExternalLink} from "../../components/sharedPage/ExternalLink";
 import {GenshinCookbookReadmeComponent} from "./components/GenshinCookbookReadmeComponent";
 
 export const overview =

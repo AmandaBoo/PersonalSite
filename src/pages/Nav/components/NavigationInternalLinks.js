@@ -6,7 +6,7 @@ export const NavigationInternalLinks = ({name, path}) => {
         <NavLink
             className={
                 ({ isActive }) => (isActive ? 'text-3xl p-5 line-through hidden md:block'
-                    : 'text-3xl p-5 underline underline-offset-2 hover:text-white rounded-md md:block hidden')}
+                    : 'text-3xl p-5 underline underline-offset-2 hover:text-white md:block hidden')}
             to={path}>{name}
         </NavLink>
     )

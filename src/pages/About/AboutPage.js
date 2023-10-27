@@ -17,12 +17,12 @@ function createPersonalImageContainer() {
             <img
                 className={'w-1/2 md:w-3/12 rounded-lg px-2'}
                 alt={'art-museum'}
-                src={'/images/art_museum.jpg'}
+                src={'/images/about/art_museum.jpg'}
             />
             <img
                 className={'w-1/2 md:w-3/12 rounded-lg px-2'}
                 alt={'bridge'}
-                src={'/images/bridge2.jpg'}
+                src={'/images/about/bridge2.jpg'}
             />
         </div>
     );

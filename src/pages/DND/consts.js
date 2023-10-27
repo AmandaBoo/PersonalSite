@@ -2,11 +2,11 @@ import React from "react";
 
 export const overview =
     <>
-        <p className={'my-4'}>
+        <p>
             At the bottom of this page you can find printer-friendly, DND sheets for 5E, that I've
             hand-designed using Figma and Goodnotes.
         </p>
-        <p className={'my-4'}>
+        <p>
             Feel free to print them out for physical use, or copy them over to
             your favorite tablet notebook app to begin scribbling!
         </p>
