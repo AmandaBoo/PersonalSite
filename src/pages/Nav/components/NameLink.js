@@ -8,15 +8,16 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export const NameLink = () => {
     return (
         <div className={'text-6xl md:text-8xl font-serif py-20 px-5'}>
-            <IconButton>
-                <FavoriteBorderIcon/>
-            </IconButton>
-            <NavLink to={"/"}>AMANDA BUI</NavLink>
-            <IconButton>
-                <NavLink to={'/kitfox'}>
-                    <FavoriteBorderIcon/>
-                </NavLink>
-            </IconButton>
+            <div>
+                <NavLink to={"/"}>AMANDA BUI</NavLink>
+            </div>
+            <div>
+                <IconButton>
+                    <NavLink to={'/kitfox'}>
+                        <FavoriteBorderIcon/>
+                    </NavLink>
+                </IconButton>
+            </div>
         </div>
     );
 }
